@@ -37,6 +37,21 @@
         top: 10px;
         z-index: 5;
       }
+        #floating-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-family: 'Roboto', 'sans-serif';
+            font-size: 80px;
+            font-weight: 600;
+            z-index: 5;
+        }
+        #floating-title {
+            background-color: #fff;
+            position: absolute;
+            left: 50%;
+            z-index: 5;
+        }
     </style>
   </head>
 
@@ -46,6 +61,9 @@
       <button onclick="changeGradient()">Change gradient</button>
       <button onclick="changeRadius()">Change radius</button>
       <button onclick="changeOpacity()">Change opacity</button>
+    </div>
+    <div id="floating-title">
+      <p>My New Map</p>
     </div>
     <div id="map"></div>
     <script>
