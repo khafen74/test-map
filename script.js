@@ -4,10 +4,6 @@
 
 var map, heatmap;
 
-<script src="script.js" async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDZf6RrbTAepRiVrwhTMiuk-xrtV4Vqew&libraries=visualization&callback=initMap">
-    </script>
-
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 13,
