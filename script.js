@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             var js_file = document.createElement('script');
             js_file.type = 'text/javascript';
-            js_file.src =  'https://maps.googleapis.com/maps/api/js?key=AIzaSyBfWGjF4Ykl6ZBUjuTULiGHSd0vKVZzLWA&&libraries=visualization&callback=initMap';
+            js_file.src =  'https://maps.googleapis.com/maps/api/js?key=AIzaSyBfWGjF4Ykl6ZBUjuTULiGHSd0vKVZzLWA&libraries=visualization&callback=initMap';
             document.getElementsByTagName('head')[0].appendChild(js_file);
         }
 });
@@ -34,10 +34,10 @@ function initMap() {
        data: getPoints(),
         map: map
     });
-    }
+}
 
 function toggleHeatmap() {
-    heatmap.setMap(heatmap.getMap()) ? null : map);
+    heatmap.setMap(heatmap.getMap() ? null : map);
 }
 
 function changeGradient() {
