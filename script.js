@@ -1,6 +1,5 @@
 //API Key
 //AIzaSyBfWGjF4Ykl6ZBUjuTULiGHSd0vKVZzLWA
-//callback=initMap
 
 document.addEventListener('DOMContentLoaded', function () {
     if (document.querySelectorAll('#map').length > 0)
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             var js_file = document.createElement('script');
             js_file.type = 'text/javascript';
-            js_file.src =  'https://maps.googleapis.com/maps/api/js?key=AIzaSyBfWGjF4Ykl6ZBUjuTULiGHSd0vKVZzLWA&libraries=visualization&callback=initMap';
+            js_file.src =  'https://maps.googleapis.com/maps/api/js?key=AIzaSyCUzSTE_bGkpkkTDZhx7v8Q3WqYeNdBTog&libraries=visualization&callback=initMap';
             document.getElementsByTagName('head')[0].appendChild(js_file);
         }
 });
